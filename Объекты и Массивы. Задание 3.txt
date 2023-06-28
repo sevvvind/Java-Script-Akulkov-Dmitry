@@ -1,0 +1,15 @@
+function groupByField(arr, field) {
+  const result = {};
+  
+  for (const obj of arr) {
+    const value = obj[field];
+    
+    if (result[value]) {
+      result[value].push(obj);
+    } else {
+      result[value] = [obj];
+    }
+  }
+  
+  return result;
+}

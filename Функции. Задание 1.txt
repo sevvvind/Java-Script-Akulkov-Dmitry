@@ -1,0 +1,10 @@
+function count(num) {
+  let sum = num || 0;
+  function next(arg) {
+    if (typeof arg === 'number') {
+      sum += arg;
+    }
+    return next;
+  }
+  return next;
+}

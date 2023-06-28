@@ -1,0 +1,7 @@
+function convertArrToObj(arr) {
+  const obj = {};
+  arr.forEach((item, index) => {
+    obj[index] = item;
+  });
+  return obj;
+}
